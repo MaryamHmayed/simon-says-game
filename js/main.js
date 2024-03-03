@@ -35,8 +35,6 @@ play.addEventListener("click", function playGame(){
     }
     interval=setInterval(turnSwitch,800)
 
-
-
 })
 
 function startGame(){
@@ -63,7 +61,7 @@ function one(){
         audio.play()
     }
     sound=true
-    green.style.backgroundColor="lightgreen";
+    green.classList.remove("inactive");
 }
 
 
@@ -73,7 +71,7 @@ function two(){
         audio.play()
     }
     sound=true
-    red.style.backgroundColor="tomato";
+    red.classList.remove("inactive");
 }
 function three(){
     if (sound){
@@ -81,7 +79,7 @@ function three(){
         audio.play()
     }
     sound=true
-    yellow.style.backgroundColor="lightyellow";
+    yellow.classList.remove("inactive");
 }
 
 function four(){
@@ -90,5 +88,8 @@ function four(){
         audio.play()
     }
     sound=true
-    blue.style.backgroundColor="lightblue";
+    blue.classList.remove("inactive");
 }
+
+
+
